@@ -24,8 +24,8 @@ export function TwoDice(): JSX.Element {
                 <Button onClick={() => setrightDie(d6)}>Roll Right</Button>
             </span>
             <div>
-                <span>left die: {leftDie}</span>
-                <span> right die: {rightDie}</span>
+                <span data-testid="left-die">{leftDie}</span>
+                <span data-testid="right-die">{rightDie}</span>
             </div>
             <div>
                 {leftDie === rightDie && leftDie === 1 ? (
